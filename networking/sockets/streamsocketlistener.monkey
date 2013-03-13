@@ -17,7 +17,6 @@ Class BBStreamSocketListener
 	Method Connect(port)
 	Method Write(buffer:DataBuffer,offset,count )
 	Method Close()
-	Method GetDataBuffer(dst:DataBuffer, src:BBDataBuffer)
 End 
 
 Public 

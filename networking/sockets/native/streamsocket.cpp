@@ -55,15 +55,6 @@ public:
 		Close();
 	}
 
-	int GetDataBuffer(BBDataBuffer* dst, BBDataBuffer* src)
-	{
-		int* dst_tmp = ((int*)dst)+4;
-		int* src_tmp = ((int*)src)+4;
-		*dst_tmp = *src_tmp;
-		*(dst_tmp +1)= *(src_tmp+1);
-		return 0;
-	}
-	
 	bool Connect(String addr, int port)
 	{
 		if( state!=0 ) return false;

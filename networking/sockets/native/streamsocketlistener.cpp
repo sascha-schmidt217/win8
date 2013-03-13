@@ -43,15 +43,6 @@ public:
 	void Connect(int port);
 	void ReceiveLoop(DataReader^ reader, StreamSocket^ socket);
 	
-	int GetDataBuffer(BBDataBuffer* dst, BBDataBuffer* src)
-	{
-		int* dst_tmp = ((int*)dst)+4;
-		int* src_tmp = ((int*)src)+4;
-		*dst_tmp = *src_tmp;
-		*(dst_tmp +1)= *(src_tmp+1);
-		return 0;
-	}
-		
 	IBuffer^ CreateBuffer(UINT32 cbBytes, byte* ptr )
 	{
 		if( nativeBuffer == nullptr )
