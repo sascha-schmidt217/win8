@@ -1,7 +1,7 @@
 win8
 ====
 
-windows 8 networking for monkey
+Windows Runtime networking features for monkey
 
 **Interfaces**
 
